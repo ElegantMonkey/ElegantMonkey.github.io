@@ -1,0 +1,103 @@
+* {
+	font-family: Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-image: url(bg.jpg);
+	background-size: cover;
+}
+
+div.container {
+	position: fixed;
+	top: 15%;
+	height: 70%;
+	left: 15%;
+	width: 70%;
+	display: flex;
+}
+
+div.main {
+	color: white;
+	text-align: center;
+	width: 69%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+div.main h1 {
+	font-size: 2.5em;
+	margin: 40px;
+}
+
+div.main a {
+	color: white !important;
+	text-decoration-style: dashed;
+}
+
+div.main a:hover {
+	text-decoration-style: solid;
+}
+
+div.columns {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	flex-grow: 2;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	padding: 1px;
+}
+
+div.columns ul li:first-child {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+div.waifu {
+	background-image: url(waifu.jpg);
+	background-size: cover;
+	background-position: center;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	height: 100%;
+	margin-left: 2%;
+	width: 29%;
+}
+
+form input.search-box {
+	color: white !important;
+	width: 80%;
+	margin-bottom: 40px;
+	height: 2rem;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	transition: border-bottom-color 0.4s ease-out;
+	transition: background-color 0.2s ease-out;
+}
+
+form input.search-box:hover {
+	border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+form input.search-box:focus {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-bottom-color: rgba(255, 255, 255, 0.7);
+}
+
+form input[type="submit"] {
+	display: none;
+}
